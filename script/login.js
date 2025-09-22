@@ -12,14 +12,14 @@ document.getElementById('login-btn').addEventListener('click', function(event){
     // console.log(accountNumber,pin);
         if(accountNumber.length===11){
             if(convertedPin===1234){
-                console.log('ok to proceed');
+                window.location.href="/main.html"
             }
             else{
-                console.log('pin is wrong');
+                alert('pin is wrong');
                 
             }
         }else{
-            console.log('Need valid account number')
+            alert('Need valid account number')
         }
     
 })
