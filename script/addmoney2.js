@@ -1,17 +1,20 @@
-document.getElementById('addmoney').addEventListener('click', function(event){
+document.getElementById('add-money').addEventListener('click', function(event){
     event.preventDefault();
     const amount = getInputValueByID('amount')
     const pin = getInputValueByID('pin')
-    const account = document.getElementById('account').value;
+    const account = document.getElementById('account-number').value;
+    const mainBalace = getInnerTextID('main-balance')
 
-
-    console.log(amount, pin);
+    // console.log(mainBalace);
+    
+    // console.log(amount, pin);
     
 
     if(account.length === 11){
         if(pin === 1234){
-            const sum = convertedMainBalance + convertedAmount;
-            document.getElementById('main-balance').innerText=sum;
+            const sum = mainBalace + amount;
+            // document.getElementById('main-balance').innerText=sum;
+            setInnerTextByIDandValue('main-balance', sum)
         }
         else{
             console.log('wrong pin');
