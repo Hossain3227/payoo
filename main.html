@@ -46,7 +46,7 @@
               <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" />
               <h3>Get Bonus</h3>
             </div>
-            <div class="box border p-4 text-center rounded-sm">
+            <div id="transaction-box" class="box border p-4 text-center rounded-sm">
               <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" />
               <h3>Transaction history</h3>
             </div>
@@ -135,12 +135,22 @@
                         placeholder="Type ypur pin"
                         required
                       />
-                      <div><a class="link link-hover">Forgot password?</a></div>
+                      
                       <button id="cashout-btn" class="btn btn-neutral mt-4 bg-blue-700">
                         Cashout
                       </button>
                     </fieldset>
           </section>
+
+          <!-- transaction history -->
+           <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-red-400 text-center p-3">
+              Transaction History
+            </h1>
+            <div id="t-container">
+
+            </div>
+           </section>
         </section>
       </header>
     </section>
@@ -150,5 +160,6 @@
     <script src="./script/addmoney2.js"></script>
     <script src="./script/toggle.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/transaction.js"></script>
   </body>
 </html>
